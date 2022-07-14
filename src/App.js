@@ -5,6 +5,7 @@ import {Home} from "./page/home";
 import {My} from "./page/my";
 import {About} from "./page/about";
 import {NotFound} from "./page/notFound";
+import { AboutDetail } from './page/aboutDetail';
 
 import './reset.css';
 import './App.css';
@@ -19,14 +20,15 @@ class App extends Component {
               <div className='LinkContainer'>
                 <Link to="/">홈</Link>
                 <Link to="/my">내 정보</Link>
-                <Link to="/about/1">자세히</Link>
+                <Link to="/about">자세히</Link>
               </div>
           </header>
           <main>
             <Routes>
               <Route exact path="/" element={<Home/>}/>
               <Route path="/my" element={<My/>}/>
-              <Route path="/about/:id" element={<About/>}/>
+              <Route path="/about/" element={<About/>}/>
+              <Route path="/about/:id" element={<AboutDetail/>}/>
               <Route path="/*" element={<NotFound/>}/>
             </Routes>
           </main>
