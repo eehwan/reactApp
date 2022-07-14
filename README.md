@@ -1,3 +1,12 @@
+
+# 초기 페이지 셋팅 불러오기
+
+https://github.com/eehwan/reactApp/tree/f77d77d4d6606e96fd52fac8c1a48d19d8c93d03
+``` bash
+git clone https://github.com/eehwan/reactApp.git
+git reset --hard f77d77d4d6606e96fd52fac8c1a48d19d8c93d03
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
